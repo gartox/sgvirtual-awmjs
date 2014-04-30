@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+    <section class="" data-id="ce03e865bff6bc2bae071ae49961cc2a">
+        <h1>
+            <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374569/Aplicaciones_web_modernas_con_Javascript.jpg" style="color: rgb(0, 0, 0); width: 934.1734033787397px; height: 700.6646804444555px; max-height: none; max-width: none;">
+        </h1>
+    </section>
+    <section class="" data-id="48eed1e31dd33c6167a25b5c54b9b27a">
+        <h2>Agenda</h2>
+<div>
+        <ul>
+<li>Javascript</li>
+<li>Aplicaciones web</li>
+<li>Aplicaciones web modernas</li>
+<li>WAI - ARIA</li>
+<li>SPA</li>
+<li>MEAN Stack</li>
+<li>Automatización</li>
+</ul>
+    </div>
+</section>
+<section class="stack" data-id="0249cc4c0c9ede4f4c3ae291dee3eafd">
+    <section class="" data-id="521419e17a28e7f401864ef9a0bbced2">
+        <h2>
+            <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374601/javascript.png" style="color: rgb(0, 0, 0); width: 664.0869289127419px; height: 663.0136503277272px; max-height: none; max-width: none;">
+        </h2>
+    </section>
+    <section class="" data-id="facb1abc709be912877fac5160164994">
+        <h2>
+            <br>
+        </h2>
+<h2>javascript</h2>
+<div>
+        <br>
+    </div>
+<div>
+    <ul>
+<li>Un lenguaje dinámico</li>
+<li>Ligero y rápido</li>
+<li>Multi plataforma</li>
+<li>Sin tipado</li>
+<li>Scripting</li>
+</ul>
+</div>
+</section>
+<section class="" data-id="605c9ea13227d146b33972ac03a6c77b">
+    <h2>
+        <br>
+    </h2>
+<h2>
+    <br>
+</h2>
+<h2>Javascript</h2>
+<div>
+<br>
+</div>
+<div>
+<ul>
+<li>Se ejecuta en el cliente</li>
+<li>Se ejecuta en el servidor</li>
+<li>Lenguaje subestimado</li>
+</ul>
+</div>
+</section>
+</section>
+<section class="" data-id="0c593356afa50f95f63dd53d808c0e56">
+    <p>
+    <br>
+</p>
+<p>
+<br>
+</p>
+<p>
+<br>
+</p>
+<blockquote>"It's the only language that I'm aware of that people feel that they don't need to learn it before they start using it."</blockquote>
+<blockquote>Douglas Crockford about JavaScript</blockquote>
+<br>
+</section>
+<section class="stack" data-id="ade030dcd453f41436b762cd278f001c">
+    <section class="" data-id="29cef3496331f7cf9a80b4262d85e7c3">
+        <h2>Aplicaciones web&nbsp;</h2>
+<div>(Vieja escuela)</div>
+<div>
+        <br>
+    </div>
+<div>
+    <ol>
+<li>Se ejecutan operaciones en el servidor</li>
+<li>El servidor devuelve una respuesta</li>
+<li>Se muestra la respuesta</li>
+<ol>
+<li>Recargando la página</li>
+<li>Vía Asíncrona (AJAX)</li>
+</ol>
+</ol>
+</div>
+</section>
+<section class="" data-id="ff6949295c1f8f7720f08bd57eba917c">
+    <h2>aplicaciones web</h2>
+<div>(Vieja escuela)</div>
+<div>
+    <br>
+</div>
+<div>
+<ol>
+<li>El servidor toma un papel de "Dios".</li>
+<ol>
+<li>Manejo envio de peticiones</li>
+<li>Procesa la información</li>
+<li>Realiza operaciones con los datos enviados</li>
+<li>Realizad operaciones en base de datos</li>
+<li>Envía al cliente la respuesta,&nbsp;<span>muchas veces con estructura.</span>
+</li>
+</ol>
+</ol>
+</div>
+</section>
+</section>
+<section class="stack" data-id="13485296c036899978c90a531ac1f0b1">
+    <section class="" data-id="98ce1b7d1d08690f41d0684c6ab7e813">
+        <h2>aplicaciones web modernas</h2>
+<div>
+        <br>
+    </div>
+<div>
+    <ul>
+<li>Experiencia de usuario superior</li>
+<li>Múltiples componentes interactuando.</li>
+<li>Evitar recarga completa de páginas o secciones.</li>
+<li>Código que toma ventaja de mecanismos comunes.</li>
+</ul>
+</div>
+</section>
+<section class="" data-id="963d5d07fd978a4414ae7aa65d6cee55">
+    <h2>aplicaciones web modernas</h2>
+<div>
+    <br>
+</div>
+<div>
+<ul>
+<li>Modelos como única fuente de datos</li>
+<li>Vistas que observan cambios en el modelo</li>
+<li>DOM de solo escritura.</li>
+</ul>
+</div>
+</section>
+</section>
+<section class="" data-id="2d697e5467210dcd71fcfcbf473491e3">
+    <h2>wAI - aRia</h2>
+<div>
+    <br>
+</div>
+<blockquote>
+<p>The Accessible Rich Internet Applications Suite, defines a way to make Web content and Web applications more accessible to people with disabilities.</p>
+</blockquote>
+<blockquote>
+<p>
+<span>
+    <br>
+</span>
+</p>
+<p>It especially helps with dynamic content and advanced user interface controls developed with Ajax, HTML, JavaScript, and related technologies.</p>
+</blockquote>W3C<br>
+</section>
+<section class="stack" data-id="e9ea053985dab2df07cc529d941a4ca2">
+    <section class="" data-id="0792d977b591abb5c1e7ea7fe93f7f20">
+        <h2>
+            <br>
+            </h2>
+<h2>
+<span style="font-size: 75.96px;">SPA</span>
+            <br>
+</h2>
+<div>
+            <br>
+        </div>
+<blockquote>"Single page application, se ejecuta el flujo en una sola página, logrando una experiencia de usuario más cercana a una aplicación de escritorio"<br>
+</blockquote>
+<br>
+    </section>
+    <section class="" data-id="ef6973bcc7a345ef2e0d06fe75eff95c">
+        <h2>SPA</h2>
+<div>
+        <br>
+    </div>
+<div>
+    <div>
+        <ul>
+<li>
+<span style="text-align: center;">Mueve la lógica desde el servidor al cliente.</span>
+        <br>
+</li>
+<li>
+<span style="text-align: center;">El rol del servidor web evoluciona.</span>
+        <br>
+</li>
+<li>
+<span style="text-align: center;">Funcionamiento como API de datos pura o servicios web.</span>
+        <br>
+</li>
+<li>
+<span style="text-align: center;">El protagonismo está del lado cliente&nbsp;</span>
+        <span style="text-align: center;">(Javascript rules…)</span>
+</li>
+</ul>
+    </div>
+</div>
+</section>
+</section>
+<section class="" data-id="a127c7ee13664d6b882f6ff2cce95acd">
+    <h2>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374788/heroeJS.png">
+    <br>
+</h2>
+</section>
+<section class="stack" data-id="9c484c02ce4a96afb095ce84964ff2ba">
+    <section class="" data-id="01b71474e48f3e6dcc9000b45f3062d9">
+        <h2>MEAN Stack</h2>
+<h2>
+        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374791/mean_small_vertical__1_.png" style="color: rgb(0, 0, 0); width: 265.4027465327627px; height: 470.68110911574826px; max-height: none; max-width: none;">
+    </h2>
+</section>
+<section class="" data-id="adf422295c83a25a0362d484564bd132">
+    <h2>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374794/logo-mongodb-header.png" style="color: rgb(0, 0, 0); width: 537.6704971293573px; height: 154.77354123591px; max-height: none; max-width: none;">
+    <br>
+</h2>
+<div>
+    <ul>
+<li>Base de datos no relacional (NoSQL)</li>
+<li>Estructura basada en documentos</li>
+<li>JSON en forma binaria (BSON)</li>
+<li>Se pueden ejecutar operaciones Javascript</li>
+<li>Flexibilidad.</li>
+<li>Drivers para manejo con Node.Js</li>
+</ul>
+</div>
+</section>
+<section class="" data-id="62b1a1ea1bf82c219501142424a34730">
+    <h2>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374820/expressjs.png">
+    <br>
+</h2>
+<div>
+    <br>
+</div>
+<div>
+<ul>
+<li>Nodejs Framework</li>
+<li>Servidor HTTP</li>
+<li>APIS REST&nbsp;</li>
+</ul>
+</div>
+</section>
+<section class="" data-id="c5c1c75fb915cc6c0e758aad82bde5cb">
+    <h2>
+        <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374823/square-300x3001-150x150.png" style="color: rgb(0, 0, 0); width: 218.15526692325724px; height: 220.6982372521469px; max-height: none; max-width: none;">
+    </h2>
+<div>
+    <ul>
+<li>Framework JS para el cliente</li>
+<li>MVC</li>
+<li>SPA</li>
+<li>Soportado por Google</li>
+<li>Modelos</li>
+<li>Promesas</li>
+<li>Controladores</li>
+</ul>
+</div>
+</section>
+<section class="" data-id="faefbccaf6d5f0c3163951d8d93752ec">
+    <h2>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374826/nodejs.png">
+    <br>
+</h2>
+<div>
+    <br>
+</div>
+<div>
+<ul>
+<li>Entorno de desarrollo Js</li>
+<li>Basado en V8</li>
+<li>No bloqueante</li>
+<li>Manejo de eventos</li>
+<li>Aplicaciones real time</li>
+</ul>
+</div>
+</section>
+</section>
+<section class="stack" data-id="a69a19a0c8498665270646d26632b582">
+    <section class="" data-id="e74e95574499de6f981414301100f999">
+        <h2>Automatización de procesos</h2>
+<div>
+        <br>
+    </div>
+<h2>Yeoman<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374827/yeoman.png" style="color: rgb(0, 0, 0);">
+</h2>
+</section>
+<section class="" data-id="76f8235a462725ea6644aa66952b6d9e">
+    <h2>Yeoman</h2>
+<div>
+    <br>
+</div>
+<div>
+<ul>
+<li>Workflow de desarrollo estandarizado</li>
+<li>Manejo de configuraciones entre ambiente</li>
+<li>Generador de aplicaciones</li>
+<li>Tareas automatizadas</li>
+<li>Construcción, previsualización y pruebas.</li>
+<li>Manejo de dependencias utilizadas</li>
+</ul>
+</div>
+</section>
+<section class="" data-id="2b32f820b97e4a37447cb0208e7503db">
+    <h2>instalación</h2>
+<div>
+    <br>
+</div>
+<div>Instalación de Yeoman</div>
+<div>
+<pre><code><font style="font-size: 42px;"> npm <font color="#a64d79">install</font> -g yo</font></code></pre>
+</div>
+<br>
+<div>Instalar un generador de aplicaciones</div>
+<div>
+<br>
+</div>
+<div>
+<pre><code> <span style="font-family: monospace; font-style: normal; font-variant: normal; font-size: 41.6722297668457px;"> npm </span><font color="#a64d79" style="font-style: inherit; font-variant: inherit; font-weight: inherit; font-size: 41.6722297668457px;">install</font><span style="font-family: monospace; font-style: normal; font-variant: normal; font-size: 41.6722297668457px;"> -g generator-webapp</span></code></pre>
+</div>
+<br>
+</section>
+<section class="" data-id="960512d9b19cf399302c62bfd3715db0">
+    <h2>uso de yeoman en un proyecto</h2>
+<div>
+    <br>
+</div>
+<div>
+<pre><code> <span style="font-family: monospace; font-style: normal; font-variant: normal; font-size: 41.6722297668457px;"> yo <font color="#ffff00">webapp</font></span></code></pre>
+</div>
+<br>
+<div>Añadir una dependencia a un proyecto</div>
+<div>
+<br>
+</div>
+<div>
+<pre><code> <span style="font-family: monospace; font-size: 19.23333740234375px; font-style: normal; font-variant: normal;"> </span><span style="font-family: monospace; font-style: normal; font-variant: normal; background-color: rgba(0, 0, 0, 0.0980392); font-size: 41.6722297668457px;"> bower <font color="#a64d79">install</font> underscore</span></code></pre>
+</div>
+<br>
+<div>Deploy del proyecto</div>
+<div>
+<pre><code> <span style="font-family: monospace; font-size: 19.23333740234375px; font-style: normal; font-variant: normal;"> </span><span style="font-family: monospace; font-style: normal; font-variant: normal; background-color: rgba(0, 0, 0, 0.0980392); font-size: 41.6722297668457px;"> grunt</span></code></pre>
+</div>
+<div>
+<br>
+</div>
+</section>
+</section>
+<section class="stack" data-id="15381d3d94133edc570dee4289bac789">
+    <section class="" data-id="4a64ae3aa845461b7f5cae742135f166">
+        <h2>
+            <br>
+        </h2>
+<h2>
+        <br>
+    </h2>
+<h2>
+    <br>
+    </h2>
+<h2>
+<span style="font-size: 75.96px;">MEan Stack ejemplo</span>
+    <br>
+</h2>
+<div>
+    <br>
+</div>
+<div>
+<br>
+</div>
+</section>
+<section class="" data-id="6c8dacff419c87078a0b74bd8c22e02a">
+    <h2>scaffolding del proyecto</h2>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374864/yeoman-backtothefuture-export2.png">
+    <br>
+</div>
+<div>
+    <br>
+</div>
+<div>
+<br>
+</div>
+</section>
+<section class="" data-id="ce1ce1a113763fff0f72a19c7698f2b9">
+    <h2>
+        <br>
+    </h2>
+<div>
+<pre><code><font style="font-size: 32px;"> npm install -g generator-angular-fullstack</font></code></pre>
+</div>
+<br>
+<div>Crear una carpeta donde almacenaras el proyecto ejemplo proyectos/awm-ejemplo</div>
+<div>
+<br>
+</div>
+<div>
+<pre><code> <font style="font-size: 32px;">mkdir proyectos/awm-ejemplo &amp;&amp; cd $_</font></code></pre>
+</div>
+<div>
+<br>
+</div>Generamos el proyecto con<br>
+<div>
+    <br>
+</div>
+<div>
+<pre><code><font style="font-size: 32px;"> yo angular-fullstack</font></code></pre>
+</div>
+<br>
+<div>
+    <br>
+</div>
+</section>
+<section class="" data-id="0a4a6c17d5fbd511f5c5b63f6c0c790d">
+    <h2>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374926/Screen_Shot_2014-04-30_at_11.39.04.png" style="width: 750.305596653699px; height: 591.6755150031548px; max-height: none; max-width: none;">
+    <br>
+</h2>
+</section>
+<section class="" data-id="3648fddfa915bbe8bc6f13fa710b26d9">
+    <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374927/Screen_Shot_2014-04-30_at_11.39.35.png" style="width: 775.9500470343587px; height: 615.9994957255299px; max-height: none; max-width: none;">
+</section>
+<section class="" data-id="7d5fd720d3b5259d3988fbbfd864adcd">
+    <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374928/Screen_Shot_2014-04-30_at_11.40.08.png" style="width: 790.5726558142461px; height: 627.894484058534px; max-height: none; max-width: none;">
+</section>
+<section class="" data-id="622d86b818ac918b675bba5a7a52c184">
+    <h2>
+        <br>
+    </h2>
+<div>
+    <br>
+</div>
+<div>Ejecutamos</div>
+<div>
+<br>
+</div>
+<div>
+<pre><code><font style="font-size: 42px;"> grunt serve</font></code></pre>
+</div>
+<br>
+<div>Antes de ejecutar el comando anterior, se asume que se cuenta con mongoDB instalado y configurado. Y que esta levantado el servicio de mongoDB</div>
+<div>
+<br>
+</div>
+<div>
+<pre><code> <font style="font-size: 42px;">mongod</font></code></pre>
+</div>
+<br>
+</section>
+<section class="" data-id="b76410d3ed800b442d8d4772e09110e9">
+    <p>
+    <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374960/Screen_Shot_2014-04-30_at_11.48.04.png" style="width: 783.4805666016086px; height: 661.2274279386254px; max-height: none; max-width: none;">
+</p>
+</section>
+<section class="" data-id="eabe775b41ae56c3c0ee90c5a509b6c5">
+    <h2>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374965/Screen_Shot_2014-04-30_at_11.48.18.png">
+    <br>
+</h2>
+</section>
+<section class="" data-id="8a63861996b884e9245983aa55120598">
+    <h2>estructura</h2>
+<h2>
+    <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374968/Screen_Shot_2014-04-30_at_11.49.48.png" style="color: rgb(0, 0, 0); width: 163.97132728405953px; height: 568.9776949574255px; max-height: none; max-width: none;">
+</h2>
+</section>
+<section class="" data-id="af66b6e45742b13191d4a93a1629d56a">Como funciona angular<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374985/Screen_Shot_2014-04-30_at_11.51.02.png" style="width: 1086.7105664192704px; height: 589.5639110653458px; max-height: none; max-width: none;">
+</section>
+<section class="" data-id="5ee5f22c2c72e2eb928bdc3ea9865bbb">
+    <h2>Se configuran las rutas</h2>
+<div>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374997/Screen_Shot_2014-04-30_at_11.58.41.png" style="width: 629.5639110653458px; height: 549.7650673446728px; max-height: none; max-width: none;">
+    <br>
+</div>
+</section>
+<section class="" data-id="437efb85285ea03ea87830edf7b90839">
+    <h2>Controladores y modelos</h2>
+<h2>
+    <br>
+</h2>
+<h2>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/375007/Screen_Shot_2014-04-30_at_12.01.55.png" style="color: rgb(0, 0, 0); width: 934.502871930846px; height: 269.28576428447053px; max-height: none; max-width: none;">
+</h2>
+<div>
+<br>
+</div>
+</section>
+<section class="" data-id="29dc80593172f2338cc9c4f5f6f495b3">
+<h2>Modelos</h2>
+<div>
+    <br>
+</div>
+<div>
+    <div style="font-size: 35.2611198425293px; font-style: normal; font-variant: normal;">El modelo es:</div>
+    <div style="font-size: 35.2611198425293px; font-style: normal; font-variant: normal;">
+        <br>
+</div>
+    <div style="font-style: normal; font-variant: normal;">
+<pre><code><font style="font-size: 32px;"><font color="#ffff00">$scope.awesomeThings</font> = awesomeThings </font></code></pre>
+    <div style="font-size: 35.2611198425293px; font-style: normal; font-variant: normal;">
+<br>
+</div>
+<div style="font-size: 35.2611198425293px; font-style: normal; font-variant: normal;">Donde awesomeThings, es la respuesta de</div>
+<div style="font-size: 35.2611198425293px; font-style: normal; font-variant: normal;">la promesa que se lleva a cabo.</div>
+
+    
+</div>
+</div>
+</section>
+<section class="" data-id="c5290e13fd10b3a78ced9e48f8cdbe79">
+    <h2>Promesas</h2>
+<h2>
+    <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/375030/Screen_Shot_2014-04-30_at_12.06.25.png" style="color: rgb(0, 0, 0); width: 631.1718324769639px; height: 462.58602379829983px; max-height: none; max-width: none;">
+</h2>
+</section>
+<section class="" data-id="60fd07fd78bf8df54adc535722d55deb">
+    <h2>usando las promesas<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/375034/Screen_Shot_2014-04-30_at_12.07.10.png" style="color: rgb(0, 0, 0); width: 696.5019031675566px; height: 597.5489856708753px; max-height: none; max-width: none;">
+</h2>
+</section>
+<section class="" data-id="903f3bdaf655a1241bf4d55dd228bda9">
+    <h2>
+        <br>
+    </h2>
+<div>
+    <br>
+</div>
+<div>Puedes bajar este ejemplo de github:</div>
+<div>
+<br>
+</div>
+<div>
+<pre><code> git clone https://github.com/gartox/sgvirtual-awmjs.git</code></pre>
+</div>
+<br>
+</section>
+</section>
+<section class="stack" data-id="622a37b3f33947438aaf728e49877ad1">
+    <section class="" data-id="01928e25f3070712ef65400e64ea804d">
+        <h2>
+            <br>
+        </h2>
+<h2>
+        <br>
+    </h2>
+<h2>GRacias</h2>
+<div>
+    <br>
+</div>
+<div>
+<br>
+</div>
+<div>Preguntas ¿?</div>
+</section>
+<section class="" data-id="f24fc8924f821cb1c95d1b11fcfeb751">
+    <h2>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jesusmanuelgarciatorres/images/374571/Jes_s_Manuel_Garc_a_Torres.jpg" style="color: rgb(0, 0, 0); width: 878.3860571572986px; height: 658.0991581546766px; max-height: none; max-width: none;">
+    <br>
+</h2>
+</section>
+</section>
+</div>
+
+            <!-- end section slide -->
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
